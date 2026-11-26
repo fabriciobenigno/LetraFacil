@@ -1,0 +1,27 @@
+FOLHA DE CÂNTICOS — SANTA MISSA
+
+ARQUIVOS DO APLICATIVO
+- index.html: sistema principal.
+- manifest.webmanifest: configura a instalação na tela inicial.
+- sw.js: cache do aplicativo para reabertura sem conexão depois do primeiro acesso.
+- icone-192.png e icone-512.png: ícones para instalação no celular.
+
+COMO USAR
+1. Publique TODOS estes arquivos juntos na mesma pasta de um site HTTPS (por exemplo, em um projeto separado do GitHub Pages).
+2. Abra o endereço do site no celular.
+3. iPhone: menu Compartilhar > Adicionar à Tela de Início.
+4. Android/Chrome: menu ⋮ > Instalar aplicativo ou Adicionar à tela inicial.
+5. Toque em cada momento litúrgico, informe o tom, o nome do cântico (opcional) e cole a letra.
+6. O rascunho é salvo automaticamente no navegador deste aparelho. Toque em “Gerar e baixar PDF” e use “Visualizar PDF” para conferir.
+
+FORMATO DO PDF
+- Papel A4, duas colunas.
+- Corpo do texto em 24 pt e entrelinha de 28,5 pt.
+- Títulos dos momentos em negrito, com o tom alinhado ao lado.
+- Nome do cântico opcional em itálico.
+- “Deus”, “Senhor” e “Maria” são escritos sempre com inicial maiúscula.
+
+OBSERVAÇÕES
+- É necessário HTTPS para instalação e funcionamento do cache offline.
+- A biblioteca PDF é carregada por CDNs alternativos. O primeiro acesso para gerar PDF requer internet; depois, o service worker tenta manter a biblioteca em cache.
+- Os dados salvos no navegador pertencem àquele aparelho e àquele navegador. Para mudar de aparelho, gere e guarde o PDF ou copie as letras separadamente.
